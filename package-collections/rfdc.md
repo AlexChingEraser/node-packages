@@ -5,7 +5,7 @@
 
 **deep** copy a object
 
-## Problem it solved
+## Problem it Solved
 when I want to copy a object in Javascript, I will do this:
 ```javascript
 var obj = {
@@ -48,5 +48,5 @@ let copy_deep = deepcopy(obj)
 - `v8.serialize(obj)`: experimental, node.js 8.0.0+
 - `lodash.cloneDeep()`
 - `Notification` event in browser
-- 
+
 ## Source Code Detection
