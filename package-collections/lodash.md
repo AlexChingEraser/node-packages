@@ -37,3 +37,19 @@ function isUndefined(value) {
 }
 ```
 - `clone`,`cloneDeep`
+- `isEqual`: deep comparsion
+- `isEmpty`: whether is an empty `object`, `collection`, `map` or `set`
+```javascript
+// .length or .size to judge
+// not to check null, boolean, number,like:
+_.isEmpty(null);
+// => true
+ 
+_.isEmpty(true);
+// => true
+ 
+_.isEmpty(1);
+// => true
+```
+- `isSymbol`
+- `isTypedArray`
