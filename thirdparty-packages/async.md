@@ -59,3 +59,37 @@ _async.map(['./esm.js', './portfinder.js', 'server.py'], fs.stat, (error, result
   ...
 */
 ```
+
+## Useful Methods
+### Methods
+- `each`: Applies the function iteratee to each item in coll, in parallel.
+  ```javascript
+  import each from 'async/each';
+  const fileList = [ 'dir1/file2.txt', 'dir2/file3.txt', 'dir/file5.txt'];
+  // asynchronous function that deletes a file
+  const deleteFile = function(file, callback) {
+      fs.unlink(file, callback);
+  };
+
+  async.each(fileList, deleteFile, function(err) {
+    if( err ) {
+        console.log(err);
+    } else {
+        console.log('All files have been deleted successfully');
+    }
+  });
+  ```
+- `every`: Returns true if every element in coll satisfies an async test.
+  ```javascript
+  // Using callbacks
+  async.every(fileList, fileExists, function(err, result) {
+      console.log(result);
+      // true
+      // result is true since every file exists
+  });
+  ```
+
+
+### Control Flow
+
+### Utils

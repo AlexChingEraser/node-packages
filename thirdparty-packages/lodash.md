@@ -53,3 +53,15 @@ _.isEmpty(1);
 ```
 - `isSymbol`
 - `isTypedArray`
+
+### Function
+- `_.once(func)`: Creates a function that is restricted to invoking func once. maybe It's useful in singleton pattern
+
+### Object
+- `_at()`: find property with string format
+  ```javascript
+  var object = { 'a': [{ 'b': { 'c': 3 } }, 4] };
+ 
+  _.at(object, ['a[0].b.c', 'a[1]']);
+  // => [3, 4]
+  ```
