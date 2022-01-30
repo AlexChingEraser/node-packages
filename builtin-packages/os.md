@@ -1,7 +1,10 @@
 # os
 
-# Purpose
+# How to Use
+```javascript
+const os = require('os')
+```
 
 ## Interfaces
-- `os.networkInterfaces()`
-- 
+- `networkInterfaces`
+- `totalmem`, `freemem`: total memory and free memory
