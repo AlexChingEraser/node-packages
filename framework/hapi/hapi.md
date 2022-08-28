@@ -1,0 +1,4 @@
+- 官网：`https://hapi.dev/`
+- 背景：基于 Node.js 的应用和服务的富框架
+- 解决问题：API 服务器，网站和 HTTP 代理应用程序
+- 对比：`Koa`, `Express`

@@ -1,6 +1,6 @@
 # Joi
-
 data validation in js
+
 ## How to Use?
 ```javascript
 const Joi = require('joi');
